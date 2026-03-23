@@ -1,32 +1,32 @@
-# Football Player Analysis — MDP I
+# Análisis de Jugadores de Fútbol — MDP I
 
-Statistical analysis of football player performance data from the 2022-2023 season across Europe's top 5 leagues.
+Análisis estadístico del rendimiento de los futbolistas de la temporada 2022-2023 en las 5 grandes ligas de Europa.
 
-## Overview
+## Descripción General
 
-This project applies multivariate data analysis techniques to a dataset of **2,689 players**, exploring:
+Este proyecto aplica técnicas de análisis multivariante de datos a un conjunto de **2.689 jugadores**, explorando:
 
-- **PCA** — Dimensionality reduction and player profiling
-- **Clustering** (Ward, K-Means, K-Medoids) — Segmenting players by playing style
-- **Regression** — Predicting goals and market value
-- **Classification** — Predicting market value category (High / Medium / Low)
+- **PCA (Análisis de Componentes Principales)** — Reducción de dimensionalidad y perfilado de jugadores.
+- **Clustering** (Ward, K-Means, K-Medoids) — Segmentación de jugadores según su estilo de juego.
+- **Regresión** — Predicción de goles y valor de mercado.
+- **Clasificación** — Predicción de la categoría del valor de mercado (Alto / Medio / Bajo).
 
-## Data Sources
+## Fuentes de Datos
 
-- [Kaggle — 2022/2023 Football Player Stats](https://www.kaggle.com/datasets/vivovinco/20222023-football-player-stats) (from FBref)
-- Market values: Transfermarkt (September 2022)
+- [Kaggle — 2022/2023 Football Player Stats](https://www.kaggle.com/datasets/vivovinco/20222023-football-player-stats) (basado en datos de FBref).
+- Valores de mercado: Transfermarkt (Septiembre de 2022).
 
-## Tech Stack
+## Tecnologías y Herramientas
 
-- **R** — Main analysis language
-- **R Markdown** — Report generation
-- Key packages: `FactoMineR`, `factoextra`, `dplyr`, `corrplot`, `cluster`, `randomForest`, `caret`
+- **R** — Lenguaje principal para el análisis.
+- **R Markdown** — Generación del informe final.
+- Paquetes principales: `FactoMineR`, `factoextra`, `dplyr`, `corrplot`, `cluster`, `randomForest`, `caret`.
 
-## Usage
+## Uso
 
-Open `football_analytics.Rmd` in RStudio and click **Knit** to generate the HTML report.
+Abre `football_analytics.Rmd` en RStudio y haz clic en **Knit** para generar el informe en HTML.
 
-### Required packages
+### Paquetes requeridos
 
 ```r
 install.packages(c("readxl", "dplyr", "FactoMineR", "factoextra", "corrplot",
